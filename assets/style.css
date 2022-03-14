@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -67,4 +68,12 @@ header h1 {
     width: 90%;
     margin-bottom: 15px;
     border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero-cont{
+    flex: 2 100%;
+    justify-content: center;
+    }
 }
