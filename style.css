@@ -172,8 +172,7 @@ padding: 5px;
 }
  
 
- .facts{
-    justify-content: center;
+ .facts {
     display: flex;
     flex-direction: column;
     border: 2px solid purple;
@@ -200,4 +199,11 @@ padding: 5px;
     flex-direction: row;
     justify-content: center;
     padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-cont{
+    flex: 2 100%;
+    justify-content: center;
+    }
 }
