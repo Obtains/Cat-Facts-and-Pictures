@@ -1,0 +1,203 @@
+/* es (61 sloc)  1.09 KB */
+   
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+padding: 20px 35px;
+ background-color: antiquewhite;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ position: sticky;
+ top: 0;
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: 80%;
+ z-index: 9999;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: purple;
+    margin: 0; 
+} 
+
+.hero {
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /*background-position: 80%;*/
+}
+
+.hero-form {
+    border: 3px solid purple;
+    background-color: antiquewhite;
+    padding: 20px;
+    color:purple;
+    width: 40%;
+    margin: 3.5%;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+    color: purple;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+.hero-cont {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: purple;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.hero-cont h2 {
+    font-size: 55px;
+    color:purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-input {
+    border: 1px solid gray;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: black;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.box{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 5px;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-self: unset;
+    border: 2px solid purple;
+    background-color: antiquewhite;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.box {
+    color: purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.contant{
+ margin-left: 10px;
+ padding: 5px;
+ font-size: larger;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.drop{
+    width: 25px;
+    padding: 1rem;
+}
+
+.submit {
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background: lightblue;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.submit2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+
+.submitbtn{
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+.submitbtn:hover {
+    background: lightblue;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+ .pictures{
+    display: flex;
+    border: 2px solid purple;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+ 
+
+ .facts{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    overflow-x: auto;
+    margin: 5px 0 15px 0;
+ }  
+
+.pictures {
+    display: flex;
+    border: 2px solid purple;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+.breed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
