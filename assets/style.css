@@ -118,7 +118,7 @@ submit2 {
 
 .submitbtn
 {
- background-color: blue;
+ background-color: aqua;
  color: white;
 }
     
@@ -135,11 +135,14 @@ submit2 {
  
 
  .facts{
-    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
     border: 2px solid red;
     width: 350px;
     height: 300px;
     border-radius: 10px;
+    background-color: aqua;
 
 }
- 
+
