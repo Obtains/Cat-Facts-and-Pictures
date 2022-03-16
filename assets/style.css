@@ -131,6 +131,13 @@ submit2 {
     width: 350px;
     height: 300px;
     border-radius: 10px;
+   
+    
+}
+
+.pictures > img{
+    width: 100%;
+
 }
  
 
