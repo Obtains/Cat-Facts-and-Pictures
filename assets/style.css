@@ -162,8 +162,9 @@ padding: 5px;
        color: red ;
    }
 
-   .endI {
-    
-     
- 
-   }
+@media only screen and (max-width: 768px) {
+    .hero-cont{
+    flex: 2 100%;
+    justify-content: center;
+    }
+}
