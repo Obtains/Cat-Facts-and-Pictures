@@ -11,18 +11,19 @@
     <header>
         <h1>Random Cat Info</h1>
     </header>
-
+    <!-- // assign the first Api to id catinfo -->
     <section class="hero">
         <div class="hero-cont">
             <h2>Adopt a Cat Today!</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur, quia possimus nulla voluptates, sint earum ea at neque impedit necessitatibus animi. Libero dolores tempore velit, eligendi nulla officia inventore!
+            <p id="catinfo">
+
             </p>
         </div>
+        <!-- // get the user data by class-->
         <div class="hero-form">
-            <h3>Get Your Cat Today!</h3>
-            <p>Fill out this form so your locale animal shelter can give you more information on your future furry companion!</p>
-
+            <h3>Get Your Cat Today</h3>
+            <p>Fill out this form to locate the nearest animal shelter to aquire your furry companion today!</p>
+         <!-- // get the user data -->  
             <form>
                 <label for="name">Enter Full Name:</label>
                 <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
@@ -31,96 +32,119 @@
                 <label for="phone">Phone Number</label>
                 <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="formsubmit">Submit</button>
             </form>
         </div>
     </section>
-
+  <!-- //create the flex box row  with three blocks -->
     <section class="box">
-     <div class="list">
-        <div class="title">
-        <h1>Cat Breed</h1>
+        <!-- //first block is list -->
+        <div class="list">   
+            <div class="title">
+                <h1>Cat Breed</h1>
+            </div>
+
+
+            <div class="contant">
+                <label for="breed">Choose the breed:</label>
+            </div>
+      <!-- // drop menu -->
+            <div class="drop">
+                <select name="breed" id="breed">
+                    <option value="Abyssinian">Abyssinian</option>
+                    <option value="American Bobtail">American Bobtail</option>
+                    <option value="American Curl">American Curl</option>
+                    <option value="American Shorthair">American Shorthair</option>
+                    <option value="American Wirehair">American Wirehair</option>
+                    <option value="Balinese">Balinese</option>
+                    <option value="Birman">Birman</option>
+                    <option value="Bombay">Bombay</option>
+                    <option value="British Shorthair">British Shorthair</option>
+                    <option value="Burmilla">Burmilla</option>
+                    <option value="Calico">Calico</option>
+                    <option value="Chartreux">Chartreux</option>
+                    <option value="Chausie">Chausie</option>
+                    <option value="Cornish Rex">Cornish Rex</option>
+                    <option value="Cymric">Cymric</option>
+                    <option value="Devon_Rex">Devon Rex</option>
+                    <option value="Domestic_Long_Hair">Domestic Long Hair</option>
+                    <option value="Domestic_Shorthair">Domestic Shorthair</option>
+                    <option value="Egyptian_Mau">Egyptian Mau</option>
+                    <option value="Exotic_Shorthair">Exotic Shorthair</option>
+                    <option value="Havana">Havana</option>
+                    <option value="Himalayan">Himalayan</option>
+                    <option value="Japanese_Bobtail">Japanese Bobtail</option>
+                    <option value="Javanese">Javanese</option>
+                    <option value="Korat">Korat</option>
+                    <option value="Maine_Coon">Maine Coon</option>
+                    <option value="Manx">Manx</option>
+                    <option value="Norwegian_Forest_Cat">Norwegian Forest Cat</option>
+                    <option value="Ocicat">Ocicat</option>
+                    <option value="Oriental_Short_Hair">Oriental Short Hair</option>
+                    <option value="Persian">Persian</option>
+                    <option value="Pixiebob">Pixiebob</option>
+                    <option value="Ragamuffin">Ragamuffin</option>
+                    <option value="Ragdoll">Ragdoll</option>
+                    <option value="Russian_Blue">Russian Blue</option>
+                    <option value="Scottish_Fold">Scottish Fold</option>
+                    <option value="Selkirk_Rex">Selkirk Rex</option>
+                    <option value="Siamese">Siamese</option>
+                    <option value="Siberian">Siberian</option>
+                    <option value="Singapura">Singapura</option>
+                    <option value="Snowshoe">Snowshoe</option>
+                    <option value="Somali">Somali</option>
+                    <option value="Sphynx">Sphynx</option>
+                    <option value="Tabby">Tabby</option>
+                    <option value="Tonkinese">Tonkinese</option>
+                    <option value="Tortoiseshell">Tortoiseshell</option>
+                    <option value="Toyger">Toyger</option>
+                    <option value="Turkish_Angora">Turkish Angora</option>
+                    <option value="Turkish_Van">Turkish Van</option>
+                    <option value="Tuxedo">Tuxedo</option>
+                    <option value="York_Chocolate">York Chocolate</option>
+
+                </select>
+            </div>
+
+            <div class="submit2">
+                <button class="submitbtn" type="submit">Submit</button>
+            </div>
+        </div>
+<!-- //create the second block contain the breed facts from the second Api-->
+        <div class="facts">
+            <h2>Breed Facts:</h2>
+            <div id="facts-container"></div>
+        </div>
+<!-- // create the third block for the cats images -->
+        <div class="pictures">
+            <img src="" alt="" id="CatPhoto" />
         </div>
 
-
-         <div class="contant">
-          <label for="cars">Choose the breed:</label>
-        </div>
-
-        <div class="drop">
-          <select name="breed" id="breed">
-            <option value="Abyssinian">Abyssinian</option>
-            <option value="American Bobtail">American Bobtail</option>
-            <option value="American Curl">American Curl</option>
-            <option value="American Shorthair">American Shorthair</option>
-            <option value="American Wirehair">American Wirehair</option>
-            <option value="Balinese">Balinese</option>
-            <option value="Birman">Birman</option>
-            <option value="Bombay">Bombay</option>
-            <option value="British Shorthair">British Shorthair</option>
-            <option value="Burmilla">Burmilla</option>
-            <option value="Calico">Calico</option>
-            <option value="Chartreux">Chartreux</option>
-            <option value="Chausie">Chausie</option>
-            <option value="Cornish Rex">Cornish Rex</option>
-            <option value="Cymric">Cymric</option>
-            <option value="Devon_Rex">Devon Rex</option>
-            <option value="Domestic_Long_Hair">Domestic Long Hair</option>
-            <option value="Domestic_Shorthair">Domestic Shorthair</option>
-            <option value="Egyptian_Mau">Egyptian Mau</option>
-            <option value="Exotic_Shorthair">Exotic Shorthair</option>
-            <option value="Havana">Havana</option>
-            <option value="Himalayan">Himalayan</option>
-            <option value="Japanese_Bobtail">Japanese Bobtail</option>
-            <option value="Javanese">Javanese</option>
-            <option value="Korat">Korat</option>
-            <option value="Maine_Coon">Maine Coon</option>
-            <option value="Manx">Manx/option>
-            <option value="Norwegian_Forest_Cat">Norwegian Forest Cat</option>
-            <option value="Ocicat">Ocicat</option>
-            <option value="Oriental_Short_Hair">Oriental Short Hair</option>
-            <option value="Persian">Persian</option>
-            <option value="Pixiebob">Pixiebob</option>
-            <option value="Ragamuffin">Ragamuffin</option>
-            <option value="Ragdoll">Ragdoll</option>
-            <option value="Russian_Blue">Russian Blue</option>
-            <option value="Scottish_Fold">Scottish Fold</option>
-            <option value="Selkirk_Rex">Selkirk Rex</option>
-            <option value="Siamese">Siamese</option>
-            <option value="Siberian">Siberian</option>
-            <option value="Singapura">Singapura</option>
-            <option value="Snowshoe">Snowshoe</option>
-            <option value="Somali">Somali</option>
-            <option value="Sphynx">Sphynx</option>
-            <option value="Tabby">Tabby</option>
-            <option value="Tonkinese">Tonkinese</option>
-            <option value="Tortoiseshell">Tortoiseshell</option>
-            <option value="Toyger">Toyger</option>
-            <option value="Turkish_Angora">Turkish Angora</option>
-            <option value="Turkish_Van">Turkish Van</option>
-            <option value="Tuxedo">Tuxedo</option>
-            <option value="York_Chocolate">York Chocolate</option>
-            
-            </select>
-        </div>
-
-          <div class="submit2">
-            <button class ="submitbtn" type="submit">Submit</button>
-        </div>
-     </div>
-
-     <div class="facts">
-         <h2>Breed Facts:</h2>
-         <div id="facts-container"></div>
-     </div>
-
-     <div class="pictures">
-        <img src="" alt="" id="CatPhoto" />
-     </div>
-    
     </section>
+<!-- //create the page footer -->
+    <footer class="end">
+
+        <div class="endP">
+            <p>
+                <br>Perfectly healthy cats across the country are being trapped and</b>
+                <br>killed in misguided attempts to manage community cat</b>
+                <br>populations. Free-roaming cats are widely misunderstood,</br>
+                and often fall victim to deadly human ignorance and intolerance.
+            </p>
+
+        </div>        
+
+        <div class="endI">
+         <img src="./micheal.JPG" width = "155px", height="105px">
+        </div>
+    
+
+
+    </footer>
+  <!-- include smtpjs to send emails to the user -->
+    <script scr="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./script.js"></script>
 
-    </body>
+</body>
 
-    </html>
+</html>
