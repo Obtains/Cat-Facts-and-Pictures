@@ -83,6 +83,13 @@ header h1 {
     border-radius: 10px;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .hero-cont{
+    flex: 2 100%;
+    justify-content: center;
+    }
+}
 .box{
 display: flex;
 flex-direction: row;
