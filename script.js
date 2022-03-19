@@ -72,22 +72,9 @@ function displayImage(imageId, catName) {
     //1. use imageId to construct an image url for our API
     var url = "https://cdn2.thecatapi.com/images/" + imageId + ".jpg";
 
-
-    console.log(imageId);
-
-    console.log(url);
-
+    //add our url to the image element as the 'src' property (BONUS - add an "alt" tag)
     document.getElementById("CatPhoto").src = url;
     document.getElementById("CatPhoto").alt = "photo of a " + catName;
-
-
-    // picturesContainer.appendChild(image);
-
-    //2. create an image element
-
-    //3. add our url to the image element as the 'src' property (BONUS - add an "alt" tag)
-
-    //4. append our brand-spankin-new image element to our 'pictures' element
 
 
 }
@@ -99,11 +86,14 @@ function getCatInfo() {
             if (response.ok) {
                 response.json()
                     .then(function (data) {
-                        console.log(data)
-                        var catInfo1 = data.text;
-                        var catInfo2 = document.createElement("p");
 
+                        //get the fact from data,.text andd assign it to catinfo1
+                        var catInfo1 = data.text;
+                        // create paragraph and assing it to catinfo2
+                        var catInfo2 = document.createElement("p");
+                        // put the field of text into the catinfo2
                         catInfo2.textContent = catInfo1;
+                        //display it on the page
                         catInfo.appendChild(catInfo2);
 
 
@@ -113,5 +103,3 @@ function getCatInfo() {
 
         })
 }
-
-
