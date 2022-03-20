@@ -159,4 +159,9 @@ submit2 {
     background-color: aqua;
 
 }
-
+#facts-container {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding: 15px;
+       word-spacing: 5px;
+       color: blueviolet;
+   }
